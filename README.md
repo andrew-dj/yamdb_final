@@ -2,7 +2,7 @@
 Version: 1.01
 Release Date: 04/08/2021
 ## The API for Yatube service
-[![YaMDB_final workflow](https://github.com/andrew-dj/yamdb_final/actions/workflows/main.yml/badge.svg)](https://github.com/andrew-dj/yamdb_final/actions/workflows/main.yml)
+[![YaMDB_final workflow](https://github.com/andrew-dj/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)](https://github.com/andrew-dj/yamdb_final/actions/workflows/yamdb_workflow.yml)
 
 This is an application providing API functionality for movie reviews database.
 - JWT token auth
