@@ -8,19 +8,16 @@ services:
       - postgres_data:/var/lib/postgresql/data/
     env_file:
       - ./.env
-  web:
-    build: .
+  yamdb:
+    image: bandrew8544/yamdb_final:latest
     restart: always
-    command: gunicorn api_yamdb.wsgi:application --bind 0.0.0.0:8000
-    ports:
-      - "8000:8000" 
     volumes:
-      - static_value:/code/static/
-      - media_value:/code/media/
+      - ./static_volume:/code/static
     depends_on:
       - db
     env_file:
       - ./.env
+
   nginx:
     image: nginx:1.19.3
     ports:
