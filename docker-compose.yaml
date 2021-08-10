@@ -7,7 +7,7 @@ services:
       - postgres_data:/var/lib/postgresql/data/
     env_file:
       - ./.env
-  yamdb:
+  web:
     image: bandrew8544/yamdb_final:latest
     restart: always
     volumes:
