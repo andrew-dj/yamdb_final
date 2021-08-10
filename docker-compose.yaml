@@ -11,7 +11,8 @@ services:
     image: bandrew8544/yamdb_final:latest
     restart: always
     volumes:
-      - ./static_volume:/code/static
+      - static_volume:/code/static/
+      - media_volume:/code/media/
     depends_on:
       - db
     env_file:
